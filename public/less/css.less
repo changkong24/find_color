@@ -1,0 +1,229 @@
+@charset "utf8";
+html,body{
+	font:12px/1.5 '黑体';
+	margin: 0;padding: 0;
+	height:100%;
+	width:100%;
+}
+@back_color:#F06060;//背景色
+@btn_color:#FCAD26;//按钮色
+@btn_box_color:#DA9622;//按钮阴影
+@txt_color:#ffffff;//字体颜色
+@light_color:#FFA1A1;//字体淡色
+a{
+	text-decoration: none;
+	font-size: 1.2rem;
+}
+.rel{position:relative;}.abs{position:absolute;}
+.ovh{overflow: hidden;}
+.hide{display: none;}
+.mc{margin: 0 auto;}
+.tl{text-align: left;}.tc{text-align: center;}.tr{text-align: right;}
+.col_03{
+	float: left;
+	width:33.3%;
+}
+.pages{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+//清楚浮动
+.clearfix{clear:both;overflow:hidden;height:0;*zoom:1}
+//按钮
+.btn{
+	border:none;
+	background:@btn_color;
+	box-shadow: 0 5px @btn_box_color;
+	width:200px;
+	height:50px;
+	line-height: 50px;
+	font-size: 1.5rem;
+	font-weight: bold;
+	border-radius: 8px;
+	display:inline-block;
+	color:@txt_color;
+	.mc;
+	margin-bottom: 2rem;
+	text-align: center;
+}
+.btn.end_btn{
+	background: #5cbcf6;
+	box-shadow: 0 5px #49A7DF;
+}
+//主页面
+.main{
+	.pages;
+	max-width: 480px;
+	max-height: 960px;
+	position: relative;
+	background-color: @back_color;
+	margin: 0 auto;
+}
+//加载页面
+.loading_page{
+	.pages;
+	.rel;
+	.loading{
+		.abs;
+		left:0;
+		width:100%;
+		bottom: 20rem;
+		text-align: center;
+		color:@txt_color;
+		font-size: 3rem;
+		font-weight: bold;
+	}
+}
+//开始页面
+.begin_page{
+	.rel;
+	.pages;
+	text-align: center;
+	h1{
+		margin:3rem 0;
+		font-size: 2.6rem;
+		color:@txt_color;
+		font-weight: bold;
+	}
+	.help{
+		font-size: 1.6rem;
+		color:@light_color;
+	}
+	.btns{
+		.abs;
+		bottom:5rem;
+		text-align: center;
+		width:100%;
+		div{
+			line-height: 3rem;
+			text-align: center;
+		}
+	}
+}
+//游戏中
+.game_page{
+	.pages;
+	padding-top: 1rem;
+	.rel;
+	.top{
+		font-size: 1.3rem;
+		color:@light_color;
+		width:98%;
+		padding: 0 1%;
+		span{
+			font-size: 1.8rem;
+			vertical-align: middle;
+		}
+		span.time{
+			padding:1px 5px;
+			border-radius: 5px;
+			background-color: @btn_color;
+			color:@txt_color;
+		}
+	}
+	.pause_btn{
+		width:80%;
+		height:30px;
+		line-height: 30px;
+		text-align: center;
+		margin-bottom: 0;
+		margin-top: -1rem;
+	}
+	#panel{
+		.abs;
+		width:100%;
+		height:100px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		margin: auto;
+		background-color: #ddd;
+		border-radius: 10px;
+		padding: 10px;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		span{
+			float:left;
+			border-color: #ddd;
+			border-width: 2px;
+			border-style: solid;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+	}
+	.lv_02 span{
+		width:50%;
+		height:50%;
+	}
+	.lv_03 span{
+		width:33.3%;
+		height:33.3%;
+	}
+	.lv_04 span{
+		width:25%;
+		height:25%;
+	}
+	.lv_05 span{
+		width:20%;
+		height:20%;
+	}
+	.lv_06 span{
+		width:16.6%;
+		height:16.6%;
+	}
+	.lv_07 span{
+		width:14.2%;
+		height:14.2%;
+	}
+	.lv_08 span{
+		width:12.5%;
+		height:12.5%;
+	}
+	.lv_09 span{
+		width:11.11%;
+		height:11.11%;
+	}
+}
+.pause_page{
+	text-align: center;
+	width:100%;
+	height:100%;
+	.rel;
+	.btns{
+		.abs;
+		width:100%;
+		height:214px;
+		text-align: center;
+		top:0;
+		bottom:0;
+		left:0;
+		right:0;
+		margin:auto;
+	}
+}
+.end_page{
+	text-align: center;
+	.over_text{
+		maring:3rem 0;
+		font-size: 3rem;
+		font-weight: bold;
+		color: @txt_color;
+	}
+	.end_main{
+		width: 100%;
+		text-align: center;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+		height: 200px;
+	}
+}

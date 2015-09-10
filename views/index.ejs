@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,minimal-ui">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+	<meta http-equiv="expires" content="-1">
+	<title><%= title %></title>
+	<link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+	<div class="main">
+		<!-- 加载中 -->
+		<div class="loading_page">
+			<div class="loading">加载中...</div>
+		</div>
+		<!-- 开始面板 -->
+		<div class="begin_page hide">
+			<h1>看你有多色</h1>
+			<div class="help">找出所有色块里颜色不同的一个</div>
+			<div class="btns">
+				<div class="start">
+					<a href="#" class="btn start_btn">开始游戏</a>
+				</div>
+				<div class="exit">
+					<a href="#" class="btn exit_btn">退出游戏</a>
+				</div>
+			</div>
+		</div>
+		<!-- 游戏界面 -->
+		<div class="game_page hide">
+			<header class="top">
+				<div class="tl col_03 ">
+					得分: <span class="score">0</span>
+				</div>
+				<div class="tc col_03">
+					<span class="time">60</span>
+				</div>
+				<div class="tr col_03">
+					<a href="#" class="btn pause_btn">暂停</a>
+				</div>
+				<div class="clearfix"></div>
+			</header>
+			<div id="panel" class="lv_02">
+			</div>
+		</div>
+		<!-- 暂停	 -->
+		<div class="pause_page hide">
+			<div class="btns">
+				<div class="continue">
+					<a href="#" class="btn continue_btn">继续游戏</a>
+				</div>
+				<div class="restart">
+					<a href="#" class="btn restart_btn">重新开始</a>
+				</div>
+				<div class="end">
+					<a href="#" class="btn end_btn">结束游戏</a>
+				</div>
+			</div>
+		</div>
+		<!-- 结束界面 -->
+		<div class="end_page hide">
+			<div class="end_main">
+	            <h3 class="over_text">瞎子  lv0</h3>
+	            <a href="#" class="btn restart_btn">重新开始</a>
+			</div>
+		</div>
+	</div>
+	<script src="js/require.js" data-main="js/main"></script>
+</body>
+</html>
